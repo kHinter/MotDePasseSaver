@@ -1,10 +1,6 @@
 #include "utils.hpp"
 #include "PasswordGenerator.hpp"
 
-#include <iostream>
-#include <unordered_map>
-#include <functional>
-
 void command_hub(const std::string& input)
 {
 	//split
@@ -17,6 +13,12 @@ void command_hub(const std::string& input)
 
 void c_random()
 {
+	int length = 0;
 	std::cout << "Nombre de caracteres : " << std::endl;
+	entry(length);
 
+	PasswordGenerator generator {};
+	std::string random_password{ generator.random_gen(length) };
+
+	std::cout << random_password << std::endl;
 }

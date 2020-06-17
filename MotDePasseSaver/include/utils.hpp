@@ -2,6 +2,7 @@
 #define UTILS_HPP
 
 #include <string>
+#include <iostream>
 #include <numeric>
 
 template<typename T>
@@ -15,6 +16,7 @@ void entry(T& var)
 }
 
 void command_hub(const std::string& input);
+void c_random();
 
 
 #endif
