@@ -7,6 +7,11 @@ void command_hub(const std::string& input)
 	std::string main{ input.begin(), std::find_if(input.begin(), input.end(), [](char c) -> bool {return isblank(c); }) };
 	if (main == "/random")
 		c_random();
+	else if (main == "/help")
+		c_help();
+	else if (main == "/save");
+
+
 }
 
 //c prefix = command
@@ -21,4 +26,9 @@ void c_random()
 	std::string random_password{ generator.random_gen(length) };
 
 	std::cout << random_password << std::endl;
+}
+
+void c_help()
+{
+
 }
