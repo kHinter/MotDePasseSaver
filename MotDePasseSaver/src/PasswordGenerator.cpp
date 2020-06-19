@@ -1,6 +1,7 @@
 #include "PasswordGenerator.hpp"
 
 #include <random>
+#include <fstream>
 
 std::string PasswordGenerator::random_gen(int ncaracteres) noexcept
 {
@@ -15,4 +16,23 @@ std::string PasswordGenerator::random_gen(int ncaracteres) noexcept
 		random_password.push_back(random_char(generator));
 	}
 	return random_password;
+}
+
+void PasswordGenerator::save(const std::string& password)
+{
+	std::ofstream file("main password.txt");
+
+	if (file.is_open())
+	{
+		//TODO cryptage des mots de passe
+	}
+	else
+	{
+
+	}
+}
+
+bool PasswordGenerator::issaved()
+{
+
 }

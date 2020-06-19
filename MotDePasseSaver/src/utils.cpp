@@ -11,7 +11,6 @@ void command_hub(const std::string& input)
 		c_help();
 	else if (main == "/save");
 
-
 }
 
 //c prefix = command
@@ -28,7 +27,22 @@ void c_random()
 	std::cout << random_password << std::endl;
 }
 
-void c_help()
+void c_save()
+{
+	PasswordGenerator generator{};
+	std::cout << "Cette action require des droit specifiques" << std::endl;
+	std::cout << "Entrez le mot de passe d'acces : " << std::endl;
+	while()
+	generator.save()
+}
+
+void c_read()
 {
 
+}
+
+void c_help()
+{
+	std::cout << "/random : genere un mot de passe aleatoire" << std::endl;
+	std::cout << "/save : sauvegarde le mot de passe et le nom du site / programme pour lequel il est utilise" << std::endl;
 }

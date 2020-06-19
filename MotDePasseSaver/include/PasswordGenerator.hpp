@@ -9,8 +9,10 @@ class PasswordGenerator
 public:
 	PasswordGenerator() = default;
 	std::string random_gen(int ncaracteres) noexcept;
+	void save(const std::string& password);
+	bool issaved();
 private:
-	std::vector<std::string> m_passwords;
+	bool good_main_pswd;
 };
 
 #endif
