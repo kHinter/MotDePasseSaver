@@ -21,7 +21,7 @@
     <ClCompile Include="src\utils.cpp">
       <Filter>Fichiers sources</Filter>
     </ClCompile>
-    <ClCompile Include="src\PasswordGenerator.cpp">
+    <ClCompile Include="src\PasswordTools.cpp">
       <Filter>Fichiers sources</Filter>
     </ClCompile>
   </ItemGroup>
@@ -32,7 +32,7 @@
     <ClInclude Include="include\utils.hpp">
       <Filter>Fichiers d%27en-tête</Filter>
     </ClInclude>
-    <ClInclude Include="include\PasswordGenerator.hpp">
+    <ClInclude Include="include\PasswordTools.hpp">
       <Filter>Fichiers d%27en-tête</Filter>
     </ClInclude>
   </ItemGroup>
